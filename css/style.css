@@ -1,0 +1,8 @@
+.btn-col {
+
+    width: 38px;
+}
+
+*:disabled {
+    background-color: #CCC !important;
+}
