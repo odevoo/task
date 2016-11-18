@@ -65,15 +65,15 @@ switch ($_GET{'mode'}) {
 
             ?>
             <tr>
-                <td><?php echo $task['name']?></td>
-                <td><?php echo date_nice($task['date_start'])?></td>
-                <td><?php 
+                <td><?=$task['name']?></td>
+                <td><?=date_nice($task['date_start'])?></td>
+                <td><?
                 if ($task['date_end'] != "") {
                     echo date_nice($task['date_end']);
                 } 
 
                     ?></td>
-                <td><?php
+                <td><?
                 if ($task['date_end'] == "") {
                     echo time_nice(time() -$task['date_start']);
                 } else {

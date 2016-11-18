@@ -17,7 +17,7 @@ build();
     $('#form-new').submit(function(event) {
         event.preventDefault();
         var form = $(this);
-        var data = form.serialize();
+        var data = form.serialize()
         var task = $('#task').val();
         console.log(task);
         $.ajax({
@@ -36,7 +36,7 @@ build();
             success: function () {
                 build();
             }
-        });
+        })
 
 
     });
@@ -48,7 +48,7 @@ build();
             success: function () {
                 build();
             }
-        });
+        })
 
 
     });
@@ -61,4 +61,3 @@ build();
 
 
 });
-
