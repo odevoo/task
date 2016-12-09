@@ -36,7 +36,7 @@ build();
             success: function () {
                 build();
             }
-        })
+        });
 
 
     });
